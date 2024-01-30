@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family:  sans-serif;
+  --white: #fff;
+  --black: #000;
+  --transparent: #ffffff00;
+
+  --richblack-5: #f1f2ff;
+  --richblack-25: #dbddea;
+  --richblack-50: #c5c7d4;
+  --richblack-100: #afb2bf;
+  --richblack-200: #999daa;
+  --richblack-300: #838894;
+  --richblack-400: #6e727f;
+  --richblack-500: #585d69;
+  --richblack-600: #424854;
+  --richblack-700: #2c333f;
+  --richblack-800: #161d29;
+  --richblack-900: #000814;
+
+  --richblue-5: #ecf5ff;
+  --richblue-25: #c6d6e1;
+  --richblue-50: #a0b7c3;
+  --richblue-100: #7a98a6;
+  --richblue-200: #537988;
+  --richblue-300: #2d5a6a;
+  --richblue-400: #073b4c;
+  --richblue-500: #063544;
+  --richblue-600: #042e3b;
+  --richblue-700: #032833;
+  --richblue-800: #01212a;
+  --richblue-900: #001b22;
+
+  --blue-5: #eaf5ff;
+  --blue-25: #b4daec;
+  --blue-50: #7ec0d9;
+  --blue-100: #47a5c5;
+  --blue-200: #118ab2;
+  --blue-300: #0f7a9d;
+  --blue-400: #0c6a87;
+  --blue-500: #0a5a72;
+  --blue-600: #074b5d;
+  --blue-700: #053b48;
+  --blue-800: #022b32;
+  --blue-900: #001b1d;
+
+  --caribbeangreen-5: #c1fffd;
+  --caribbeangreen-25: #83f1de;
+  --caribbeangreen-50: #44e4bf;
+  --caribbeangreen-100: #06d6a0;
+  --caribbeangreen-200: #05bf8e;
+  --caribbeangreen-300: #05a77b;
+  --caribbeangreen-400: #058105;
+  --caribbeangreen-500: #037957;
+  --caribbeangreen-600: #026144;
+  --caribbeangreen-700: #014a32;
+  --caribbeangreen-800: #01321f;
+  --caribbeangreen-900: #001b0d;
+
+  --brown-5: #fff4c4;
+  --brown-25: #ffe395;
+  --brown-50: #ffd166;
+  --brown-100: #e7bc5b;
+  --brown-200: #cfa64f;
+  --brown-300: #b89144;
+  --brown-400: #a07c39;
+  --brown-500: #88662d;
+  --brown-600: #705122;
+  --brown-700: #593c17;
+  --brown-800: #41260b;
+  --brown-900: #291100;
+
+  --pink-5: #fff1f1;
+  --pink-25: #fbc7d1;
+  --pink-50: #f79cb0;
+  --pink-100: #f37290;
+  --pink-200: #ef476f;
+  --pink-300: #d43d63;
+  --pink-400: #ba3356;
+  --pink-500: #9f294a;
+  --pink-600: #841e3e;
+  --pink-700: #691432;
+  --pink-800: #4f0a25;
+  --pink-900: #340019;
+
+  --yellow-5: #fff970;
+  --yellow-25: #ffe83d;
+  --yellow-50: #ffd60a;
+  --yellow-100: #e7c009;
+  --yellow-200: #cfab08;
+  --yellow-300: #b69507;
+  --yellow-400: #9e8006;
+  --yellow-500: #866a04;
+  --yellow-600: #6e5503;
+  --yellow-700: #553f02;
+  --yellow-800: #3d2a01;
+  --yellow-900: #251400;
+
+  --pure-greys-5: #f9f9f9;
+  --pure-greys-25: #e2e2e2;
+  --pure-greys-50: #cccccc;
+  --pure-greys-100: #b5b5b5;
+  --pure-greys-200: #9e9e9e;
+  --pure-greys-300: #888888;
+  --pure-greys-400: #717171;
+  --pure-greys-500: #5b5b5b;
+  --pure-greys-600: #444444;
+  --pure-greys-700: #2d2d2d;
+  --pure-greys-800: #171717;
+  --pure-greys-900: #141414;
+
+  --russian-violet: #310055ff;
+  --persian-indigo: #3c0663ff;
+  --indigo: #4a0a77ff;
+  --indigo-2: #5a108fff;
+  --grape: #6818a5ff;
+  --dark-violet: #8b2fc9ff;
+  --amethyst: #ab51e3ff;
+  --lavender-floral: #bd68eeff;
+  --heliotrope: #d283ffff;
+  --mauve: #dc97ffff;
+  --seasalt: #f8f9faff;
+  --antiflash-white: #e9ecefff;
+  --platinum: #dee2e6ff;
+  --french-gray: #ced4daff;
+  --french-gray-2: #adb5bdff;
+  --slate-gray: #6c757dff;
+  --outer-space: #495057ff;
+  --onyx: #343a40ff;
+  --eerie-black: #212529ff;
+}
+* {
+  /* border: 1px solid white; */
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--richblack-900);
+  color: white;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  background-color: la;
+}
+
+button {
+  background-color: var(--amethyst);
+  height: 50px;
+  /* width: 100px; */
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: 600;
+  color: white;
+}
+button {
+  transition: all 0.3s ; /* Add a smooth transition to all properties over 0.3 seconds with ease timing function */
+  min-width: 100px;
+}
+
+button:hover {
+  cursor: pointer;
+  /* transform: scale(1.01); */
+  /* box-shadow: var(--amethyst) 0px 1px 1px; */
+  background-color: var(--grape);
+  /* box-shadow: var(--blue-100) 0px 0px 5px 1px;  */
+}
+a {
+  color: var(--lavender-floral);
+  font-weight: 500;
+  text-decoration: underline;
+}
+input {
+  background-color: var(--richblack-700);
+
+  border-radius: 10px;
+  padding: 5px;
+}
+.navbar {
+  /* border: 1px solid red; */
+  box-shadow: var(--blue-100) 0px 0px 10px 0px;
+}
+
+.shadow-box {
+  box-shadow: var(--blue-100) 0px 0px 5px 1px;
+}
+.success{
+  box-shadow: var(--caribbeangreen-300) 0px 0px 12px 1px;
+}
+.failed{
+  box-shadow: var(--pink-400) 0px 0px 12px 1px;
+}
